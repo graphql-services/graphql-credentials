@@ -17,10 +17,6 @@ User:
       entity: Role
       toMany: true
       inverse: users
-    clients:
-      entity: Client
-      toMany: true
-      inverse: user
 
 Role:
   columns:
