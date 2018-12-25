@@ -1,0 +1,19 @@
+type User {
+  email: String
+  username: String
+  password: PasswordHash
+  firstname: String
+  lastname: String
+  permissions: String
+
+  roles: [Role!]! @relation(inverse: users)
+}
+
+type Role {
+  code: String
+  name: String
+  permissions: String
+  default: Boolean
+
+  users: [User!]! @relation(inverse: roles)
+}

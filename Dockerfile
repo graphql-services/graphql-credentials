@@ -1,3 +1,3 @@
-FROM graphql/orm
+FROM graphql/event-store
 
-COPY ./schema /code/schema
+COPY schema.graphql /code

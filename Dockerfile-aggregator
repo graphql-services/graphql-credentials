@@ -1,0 +1,3 @@
+FROM graphql/event-store-aggregator
+
+COPY schema.graphql /code
